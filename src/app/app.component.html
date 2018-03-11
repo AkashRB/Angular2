@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <img width="300" alt="Traveosoft Logo" src="../assets/Traveo_Logo.png">
+  <h4>
+    {{ title }}
+  </h4>
+</div>
+<div class="form-group">
+  <form (ngSubmit)="onSubmit(publicationQuery)" #publicationQuery="ngForm">
+    <div>
+      <p style="margin-bottom: 1%">Query</p>
+      <input type="text" [(ngModel)]="searchQuery" name="searchQuery" placeholder="Search the journals " required>
+      <p>Select date range for searching the publication:</p>
+      <p>From</p>
+      <my-date-picker name="fromDate" [options]="fromDatePickerOptions" [(ngModel)]="fromDate" (dateChanged)="onDateChanged($event)"></my-date-picker>
+      <p>To</p>
+      <my-date-picker name="toDate" [options]="toDateOptions" [(ngModel)]="toDate"></my-date-picker>
+      <button type="submit" [disabled]="!publicationQuery.form.valid">Submit</button>
+    </div>
+  </form>
+</div>
+<div *ngIf="showChart">
+  <p-chart type="bar" [data]="chartData" (onDataSelect)="selectData($event)"></p-chart>
+</div>
+<div>
+  <p-growl [(value)]="selectedJournal"></p-growl>
+</div>

@@ -1,0 +1,42 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+h4 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 1%;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: unset;
+}
+
+button {
+  width: 9%;
+  height: 35px;
+  margin-left: 47%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  background-color: #106cc8;
+  color: white;
+}
+
+button:disabled {
+  background-color: red;
+}
+
+input {
+  border: 1px solid #106cc8;
+  font-size: 14px;
+  outline: none;
+  padding: 8px;
+  width: 99%;
+}
+
+input:-webkit-autofill {
+  background-color: rgba(211, 211, 211, 0.644) !important
+}
