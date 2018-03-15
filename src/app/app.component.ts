@@ -97,7 +97,7 @@ export class AppComponent {
    * @memberof AppComponent
    */
   showSuccess() {
-    this.selectedJournal.push({ severity: 'success', summary: 'Journal Details', detail: 'Title : ' + this.journalTitle });
+    this.selectedJournal.push({ severity: 'success', summary: ' Most Cited Journal Details', detail: 'Title : ' + this.journalTitle });
   }
 
 }
