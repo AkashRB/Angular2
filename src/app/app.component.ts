@@ -19,7 +19,6 @@ export class AppComponent {
   queryObject = '';
   fromDate: any = {};
   toDate: any = {};
-  title = 'TraveoSoft Interview Challenge';
   showChart: boolean = false;
   fromDatePickerOptions: IMyDpOptions = {
     // other options...

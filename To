@@ -1,0 +1,16 @@
+; cli configs
+metrics-registry = "https://registry.npmjs.org/"
+scope = ""
+user-agent = "npm/5.6.0 node/v8.9.4 win32 x64"
+
+; globalconfig C:\Users\rbak\AppData\Roaming\npm\etc\npmrc
+cache = "C:\\Users\\rbak\\Desktop\\TraveoSoft\\Angular2\\Devnodejsnpm-cache"
+
+; builtin config undefined
+prefix = "C:\\Users\\rbak\\AppData\\Roaming\\npm"
+
+; node bin location = C:\Program Files\nodejs\node.exe
+; cwd = C:\Users\rbak\Desktop\TraveoSoft\Angular2
+; HOME = C:\Users\rbak
+; "npm config ls -l" to show all defaults.
+
