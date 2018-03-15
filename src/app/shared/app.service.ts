@@ -21,8 +21,9 @@ export class AppService {
         params.set('resulttype', 'lite');
         let requestOptions = new RequestOptions();
         requestOptions.search = params;
-        return this.http.get('http://starlord.hackerearth.com/hackernews').map((response: any) => {
-            // response = Object.assign({}, this.getNumberOfPublicationPerYear(response.json()));
+        //https://www.ebi.ac.uk/europepmc/webservices/rest/search?query='malaria' 
+        return this.http.get('https://www.ebi.ac.uk/europepmc/webservices/rest/search',requestOptions).map((response: any) => {
+             response = Object.assign({}, this.getNumberOfPublicationPerYear(response.json()));
             return response;
         });
     }
