@@ -9,3 +9,6 @@ Steps:
 
 Note:
 It consists of single module
+
+PROD Build
+ng build --target=production
